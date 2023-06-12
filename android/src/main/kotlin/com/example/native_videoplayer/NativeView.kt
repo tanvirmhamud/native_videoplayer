@@ -31,6 +31,8 @@ internal class NativeView(context: Context, id: Int, creationParams: Map<String?
     }
 
     override fun dispose() {
+        playerview.player!!.pause();
+        player!!.pause();
         player.release();
     }
 
